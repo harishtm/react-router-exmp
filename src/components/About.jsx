@@ -1,9 +1,9 @@
 export const About = () => {
     return (
         <>
-            <h2>
-                About
-            </h2>
+            <h3>
+                In About Page
+            </h3>
         </>
     )
 }
