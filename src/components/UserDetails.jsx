@@ -1,7 +1,8 @@
-import { useParams, useLocation } from "react-router-dom";
+import { useParams, useLocation, useNavigate } from "react-router-dom";
 
 export const UserDetails = () => {
 
+    const navigate = useNavigate()
     const params = useParams();
     const { state} = useLocation();
     console.log(params)
@@ -34,6 +35,7 @@ export const UserDetails = () => {
                     </tr>
                 </tbody>
             </table>
+            <button onClick={() => navigate('/users')}>Back to Users</button>
         </div>
     )
 }
